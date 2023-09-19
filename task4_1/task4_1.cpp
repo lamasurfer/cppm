@@ -69,7 +69,8 @@ int main() {
         return 1;
     }
 
-    for (int i = 0; i < SIZE; i++) {
+    ofs << SIZE << '\n';
+    for (int i = SIZE - 1; i >= 0; i--) {
         ofs << addresses[i].get_output_address() << '\n';
     }
     ofs.close();
